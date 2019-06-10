@@ -51,12 +51,6 @@ html, body, #content {
 	#screenshots img {
 		max-width: 200px;
 	}
-	#like-container {
-		position: absolute;
-		top: 100%;
-		right: 20px;
-		margin-top: -50px;
-	}
 }
 #chevron {
 	position: absolute;
@@ -166,17 +160,6 @@ h1, h2, h3, h4, h5, h6 {
 
 </head>
 <body>
-	<!-- begin Facebook SDK -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=385205984962960&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-	<!-- end Facebook SDK -->
-
 
 <div id='content' contentEditable>
 
@@ -213,20 +196,6 @@ h1, h2, h3, h4, h5, h6 {
 	<a href='https://itunes.apple.com/us/app/nutrifoods/id1354435733?mt=8&amp;uo=4'><img class='appstore' src='http://app-stop.appspot.com/static/appstore.svg' alt='Download on the Apple App Store'/></a>
 </p>
 
-<p>
-	<div id='like-container'></div>
-	<script>
-	// dynamically create a Facebook like button for the current URL:
-	var like = document.createElement("div");
-	like.className = "fb-like";
-	like.setAttribute("data-href", location.href);
-	like.setAttribute("data-layout", "button_count");
-	like.setAttribute("data-action", "like");
-	like.setAttribute("data-show-faces", "true");
-	like.setAttribute("data-share", "true");
-	document.getElementById("like-container").appendChild(like);
-	</script>
-</p>
 
 <p id='copyright'>&copy; Alexander Tai </p>
 
